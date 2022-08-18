@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/12a206d5e1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="asset/logo.jpg" class="logo" />
+
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>
+            Hii, I'm <span>Bishal</span><br />
+            Kumar From India.
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABout Section -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./Asset/Photo.jfif" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              To Develop my Programming skill and work in a fast faced
+              Company/Organization working on cutting edge technologies. <br><br> ASP.NET :
+              An open source software framework, ASP.NET allows users to build
+              software apps and services with .NET. These resources allow users
+              to create websites using HTML5, JavaScript, and CSS. The website
+              features opportunities for individuals to learn about open-source
+              and cross-platform options to build modern cloud-based software
+              applications including Linux, Windows, and Mac. <br><br> JavaScript : 
+              JavaScript is a high-level, interpreted programming language
+              conforming to the ECMAScript specification. The language is
+              considered weakly typed, dynamic, multi-paradigm, and dynamic.
+              Alongside HTML and CSS, it ranks among the three core technologies
+              of the World Wide Web. <br><br>Java: As a general-purpose programming
+              language, Java features class-based, concurrent, object-oriented
+              functions. Designed to minimize implementation dependencies, Java
+              allows application developers to "write once, run anywhere." Java
+              is one of the most popular programming languages used today,
+              especially for client-server software applications. <br> <br>C#: A
+              general-purpose, multi-paradigm programming language, C#
+              encompasses imperative, strong typing, functional, declarative,
+              object-oriented, component-oriented, and generic programming
+              disciplines. Developed by Microsoft within the .NET initiative, C#
+              received approval as a standard by ISO and ECMA.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skill
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opantab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web App Interface.</li>
+                <li><span>Web Developement</span><br />Website Developement</li>
+                <li>
+                  <span>App Developement</span><br />Application Developement
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>25 Sept 2021-Present</span><br />Software Engineer
+                  Trainee.
+                </li>
+                <li>
+                  <span>2018-2020</span><br />Developer at City Service App
+                </li>
+                <li><span>2016-18</span><br />Java Professor</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2018-21</span><br />B.Tech</li>
+                <li><span>2015-18</span><br />Diploma</li>
+                <li><span>2014-15</span><br />Matriculation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-titles">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Distinctio accusamus sapiente, dolorum veniam velit nihil tenetu.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Distinctio accusamus sapiente, dolorum veniam velit nihil tenetu.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Distinctio accusamus sapiente, dolorum veniam velit nihil tenetu.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio  Section-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./Asset/work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                This App Connects you to the talented people around the World.
+                Download it from Play Store.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Asset/work-2.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                This App Connects you to the talented people around the World
+                Download it from Play Store.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Asset/work-3.png" />
+            <div class="layer">
+              <h3>Online Shooping App</h3>
+              <p>
+                This App Connects you to the talented people around the World
+                Download it from Play Store.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- Contact  Section-->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>Contact@example.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>6200873549</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <a href="./Asset/CV.pdf" download="" class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright @ Bishal. Made with <i class="fa-solid fa-heart"></i> by
+          It4Bizness.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-links");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyL6lw5n1olkx59h6KHHvoCziZ4eRzm7bd7B22SewK2ZY7Bn4uGsnC_7Z1QLufMGb2QiA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent SuccessFully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
